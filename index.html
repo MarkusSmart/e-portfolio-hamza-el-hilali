@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza El Hilali - AI Engineer & Data Scientist Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .skill-bar {
+            background: #f0f0f0;
+            border-radius: 10px;
+            height: 10px;
+            margin-bottom: 20px;
+        }
+        .skill-fill {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            border-radius: 10px;
+        }
+        .project-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .experience-item {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .navbar {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Hamza El Hilali</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="photo.jpg" alt="Hamza El Hilali" class="mb-4">
+            <h1 class="display-4 fw-bold">Hamza El Hilali</h1>
+            <p class="lead">AI Engineer | Machine Learning | Data Engineering</p>
+            <p class="mb-4">Co-op / Internship focused on building end-to-end data and machine learning systems</p>
+            <a href="#contact" class="btn btn-light btn-lg me-3"><i class="fas fa-envelope"></i> Contact Me</a>
+            <a href="https://github.com/MarkusSmart?tab=repositories" target="_blank" class="btn btn-outline-light btn-lg"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">AI-focused engineer with experience building end-to-end data and machine learning systems, including data pipelines, model development, and API deployment. Strong background in Python, SQL, and cloud platforms with hands-on experience in ETL pipelines, predictive modelling, and scalable backend systems. Proven ability to translate raw data into production-ready AI solutions.</p>
+                    <p>Fluent in English, French, Arabic, and Spanish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Technical Skills</h4>
+                    <div class="mb-3">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span>Machine Learning</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span>Cloud Platforms (AWS, Azure, GCP)</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Other Skills</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-primary me-2"></i>Data Analysis and Insights Generation</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>ETL Pipelines, Data Warehousing</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Visualization & BI (Power BI, Tableau)</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Back-End Development (FastAPI, REST APIs)</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>CI/CD & DevOps</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Communication, Collaboration, Problem-Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Experience</h2>
+            <div class="experience-item">
+                <h4>Data Scientist, ALTEN</h4>
+                <p class="text-muted">March 2025 - August 2025</p>
+                <ul>
+                    <li>Built clustering models (K-means) to segment customers and improve targeting strategies</li>
+                    <li>Processed and analyzed large datasets using Python and SQL to identify performance and financial risks</li>
+                    <li>Translated business problems into data-driven solutions and communicated insights to non-technical stakeholders</li>
+                    <li>Leveraged Google Analytics data to optimize digital strategies and improve customer retention</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h4>Data Engineer, Société Surlemat</h4>
+                <p class="text-muted">May 2024 – March 2025</p>
+                <ul>
+                    <li>Designed and implemented scalable ETL pipelines to ingest, transform, and store data from multiple sources</li>
+                    <li>Built data pipelines to preprocess and prepare datasets for downstream machine learning applications</li>
+                    <li>Optimized SQL queries and data workflows to improve performance and reliability</li>
+                    <li>Automated data pipelines and reporting systems, significantly reducing manual processing effort</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h4>Data Scientist, Deloitte</h4>
+                <p class="text-muted">February 2023 - September 2023</p>
+                <ul>
+                    <li>Developed and evaluated regression models using Scikit-learn to identify key drivers of revenue and customer churn</li>
+                    <li>Engineered features and performed data preprocessing on large customer datasets using Python and SQL</li>
+                    <li>Improved campaign ROI by 18% through customer segmentation and predictive analysis</li>
+                    <li>Built automated data processing workflows, reducing reporting time from days to minutes</li>
+                    <li>Delivered data-driven insights to stakeholders, enabling faster strategic decision-making</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h4>French Tutor, TCF & Advanced Exams</h4>
+                <p class="text-muted">September 2025 – Present</p>
+                <ul>
+                    <li>Delivered structured training to help students pass TCF and advanced exams</li>
+                    <li>Developed personalized learning strategies and performance tracking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">AI-Powered Virtual Try-On System</h5>
+                            <p class="card-text">Built an AI-powered virtual try-on system enabling users to upload images and visualize clothing fit using Computer Vision and ML.</p>
+                            <p class="text-muted">Python, OpenCV, Deep Learning, FastAPI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">LLM-Powered RAG Chatbot</h5>
+                            <p class="card-text">Designed a Retrieval-Augmented Generation system for intelligent question-answering over custom document datasets.</p>
+                            <p class="text-muted">Python, FastAPI, LangChain, OpenAI API, Vector DB, Docker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Health-E Full-Stack Application</h5>
+                            <p class="card-text">Designed/developed a health application from scratch, covering front-end and back-end architecture.</p>
+                            <p class="text-muted">Python, Full-Stack Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">End-to-End ML Pipeline for Customer Churn Prediction</h5>
+                            <p class="card-text">Built classification models with feature engineering and hyperparameter tuning for churn prediction.</p>
+                            <p class="text-muted">Python, Scikit-learn, XGBoost</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5>Certificate - Artificial Intelligence, Design & Implementation</h5>
+                            <p class="text-muted">Durham College, Canada | 2025 - 2026</p>
+                            <p>Topics: Information System, Visualization, Business Intelligence, Data Analysis, Python, AWS, Tableau, Front-End Development, Back-End Development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5>Master's Degree - Data Analytics and Data Science</h5>
+                            <p class="text-muted">International University of Rabat, Morocco | 2023-2025</p>
+                            <p>Topics: Front-End/Back-End Development, Information Systems, Visualization, Business Intelligence, Data Analysis, Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5>Exchange Program: Information Technology</h5>
+                            <p class="text-muted">Toronto Metropolitan University, Canada | 2025</p>
+                            <p>Courses: Information Systems, Visualization, Business Intelligence, Data Analysis, Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5>Bachelor's Degree – Economics</h5>
+                            <p class="text-muted">Université of Mohammed, Morocco | 2019-2023</p>
+                            <p>Courses: Information Systems, Visualization, Business Intelligence, Data Analysis, Python.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                        <span>hamza.el.hilali505@gmail.com</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                        <span>(647) 236-1627</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fab fa-github fa-2x text-primary me-3"></i>
+                        <a href="https://github.com/MarkusSmart?tab=repositories" target="_blank">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2026 Hamza El Hilali. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
