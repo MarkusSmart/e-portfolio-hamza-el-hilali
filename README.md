@@ -3,7 +3,7 @@
 This is my professional ePortfolio showcasing my skills and experience as an AI Engineer and Data Scientist.
 
 ## Live Demo
-[View Portfolio](https://markussmart.github.io/e-portfolio-hamza-el-hilali/) (Update this link after deploying to GitHub Pages)
+[View Portfolio](https://markussmart.github.io/e-portfolio-hamza-el-hilali/)
 
 ## Local Development
 To view locally:

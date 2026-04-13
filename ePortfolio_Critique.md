@@ -1,10 +1,10 @@
 # ePortfolio Critique - Hamza El Hilali
 
 ## Link to ePortfolio
-[Hamza El Hilali ePortfolio](https://markussmart.github.io/e-portfolio-hamza-el-hilali/) (Note: This is a placeholder link. Please replace with your actual GitHub Pages URL after uploading.)
+[Hamza El Hilali ePortfolio](https://markussmart.github.io/e-portfolio-hamza-el-hilali/)
 
 ## Screenshot of Landing Page
-![ePortfolio Landing Page](screenshot.png) (Note: Take a screenshot of your browser showing the home section and save it as screenshot.png in the repository.)
+![ePortfolio Landing Page](screenshot.png) (Take a screenshot of your browser showing the home section and save it as screenshot.png in the repository.)
 
 ## Section Critiques
 
