@@ -1,326 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza El Hilali - AI Engineer & Data Scientist Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        .section {
-            padding: 80px 0;
-        }
-        .skill-bar {
-            background: #f0f0f0;
-            border-radius: 10px;
-            height: 10px;
-            margin-bottom: 20px;
-        }
-        .skill-fill {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 100%;
-            border-radius: 10px;
-        }
-        .project-card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-        .experience-item {
-            border-left: 4px solid #667eea;
-            padding-left: 20px;
-            margin-bottom: 30px;
-        }
-        .navbar {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-        }
-    </style>
+    <meta name="description" content="Hamza El Hilali - AI Engineer portfolio with live projects, cloud deployments, and machine learning work.">
+    <meta name="author" content="Hamza El Hilali">
+    <title>Hamza El Hilali | AI Engineer Portfolio</title>
+
+    <link rel="shortcut icon" href="static/images/gt_favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Hamza El Hilali</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <img src="photo.jpg" alt="Hamza El Hilali" class="mb-4">
-            <h1 class="display-4 fw-bold">Hamza El Hilali</h1>
-            <p class="lead">AI Engineer | Machine Learning | Data Engineering</p>
-            <p class="mb-4">Co-op / Internship focused on building end-to-end data and machine learning systems</p>
-            <a href="#contact" class="btn btn-light btn-lg me-3"><i class="fas fa-envelope"></i> Contact Me</a>
-            <a href="https://github.com/MarkusSmart?tab=repositories" target="_blank" class="btn btn-outline-light btn-lg"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-    </section>
-
-    <section id="about" class="section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">About Me</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead">AI-focused engineer with experience building end-to-end data and machine learning systems, including data pipelines, model development, and API deployment. Strong background in Python, SQL, and cloud platforms with hands-on experience in ETL pipelines, predictive modelling, and scalable backend systems. Proven ability to translate raw data into production-ready AI solutions.</p>
-                    <p>Fluent in English, French, Arabic, and Spanish.</p>
+<header id="header">
+    <div class="hero-shell">
+        <nav class="navbar navbar-default navbar-sticky">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand brand-mark" href="#top">HEH</a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="text-center mb-5">Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Technical Skills</h4>
-                    <div class="mb-3">
-                        <span>Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <span>SQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <span>Machine Learning</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <span>Cloud Platforms (AWS, Azure, GCP)</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h4>Other Skills</h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-check text-primary me-2"></i>Data Analysis and Insights Generation</li>
-                        <li><i class="fas fa-check text-primary me-2"></i>ETL Pipelines, Data Warehousing</li>
-                        <li><i class="fas fa-check text-primary me-2"></i>Visualization & BI (Power BI, Tableau)</li>
-                        <li><i class="fas fa-check text-primary me-2"></i>Back-End Development (FastAPI, REST APIs)</li>
-                        <li><i class="fas fa-check text-primary me-2"></i>CI/CD & DevOps</li>
-                        <li><i class="fas fa-check text-primary me-2"></i>Communication, Collaboration, Problem-Solving</li>
+                <div class="navbar-collapse collapse" id="main-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <section id="experience" class="section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Professional Experience</h2>
-            <div class="experience-item">
-                <h4>Data Scientist, ALTEN</h4>
-                <p class="text-muted">March 2025 - August 2025</p>
-                <ul>
-                    <li>Built clustering models (K-means) to segment customers and improve targeting strategies</li>
-                    <li>Processed and analyzed large datasets using Python and SQL to identify performance and financial risks</li>
-                    <li>Translated business problems into data-driven solutions and communicated insights to non-technical stakeholders</li>
-                    <li>Leveraged Google Analytics data to optimize digital strategies and improve customer retention</li>
-                </ul>
+        <section id="top" class="hero">
+            <div class="hero-backdrop"></div>
+            <div class="container">
+                <div class="row hero-content">
+                    <div class="col-md-7 col-sm-12">
+                        <p class="eyebrow">AI Engineer | Machine Learning | Data Engineering</p>
+                        <h1>Hamza El Hilali</h1>
+                        <p class="hero-summary">
+                            AI-focused engineer with experience building end-to-end data and machine learning systems, including ETL pipelines,
+                            model development, API deployment, and cloud delivery. I turn raw data into production-ready solutions and I am
+                            actively seeking co-op and internship opportunities where I can ship meaningful AI products.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary btn-hero" href="#projects">Explore Projects</a>
+                            <a class="btn btn-default btn-ghost" href="https://github.com/MarkusSmart?tab=repositories" target="_blank">Open GitHub</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-card reveal">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">Public repositories and experiments</span>
+                            </div>
+                            <div class="stat-card reveal">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Live apps featured in this portfolio</span>
+                            </div>
+                            <div class="stat-card reveal">
+                                <span class="stat-number" data-count="4">0</span>
+                                <span class="stat-label">Languages spoken across technical and client work</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="portrait-card reveal">
+                            <img class="profile-photo" src="static/images/hamza-profile.jpg" alt="Hamza El Hilali portrait">
+                            <div class="portrait-meta">
+                                <span>Based in Ontario, Canada</span>
+                                <span>Available for AI / Data / ML co-op roles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="experience-item">
-                <h4>Data Engineer, Société Surlemat</h4>
-                <p class="text-muted">May 2024 – March 2025</p>
-                <ul>
-                    <li>Designed and implemented scalable ETL pipelines to ingest, transform, and store data from multiple sources</li>
-                    <li>Built data pipelines to preprocess and prepare datasets for downstream machine learning applications</li>
-                    <li>Optimized SQL queries and data workflows to improve performance and reliability</li>
-                    <li>Automated data pipelines and reporting systems, significantly reducing manual processing effort</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h4>Data Scientist, Deloitte</h4>
-                <p class="text-muted">February 2023 - September 2023</p>
-                <ul>
-                    <li>Developed and evaluated regression models using Scikit-learn to identify key drivers of revenue and customer churn</li>
-                    <li>Engineered features and performed data preprocessing on large customer datasets using Python and SQL</li>
-                    <li>Improved campaign ROI by 18% through customer segmentation and predictive analysis</li>
-                    <li>Built automated data processing workflows, reducing reporting time from days to minutes</li>
-                    <li>Delivered data-driven insights to stakeholders, enabling faster strategic decision-making</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h4>French Tutor, TCF & Advanced Exams</h4>
-                <p class="text-muted">September 2025 – Present</p>
-                <ul>
-                    <li>Delivered structured training to help students pass TCF and advanced exams</li>
-                    <li>Developed personalized learning strategies and performance tracking</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+</header>
 
-    <section id="projects" class="section">
+<main id="main">
+    <section class="section intro-strip">
         <div class="container">
-            <h2 class="text-center mb-5">Projects</h2>
             <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">AI-Powered Virtual Try-On System</h5>
-                            <p class="card-text">Built an AI-powered virtual try-on system enabling users to upload images and visualize clothing fit using Computer Vision and ML.</p>
-                            <p class="text-muted">Python, OpenCV, Deep Learning, FastAPI</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="mini-panel reveal">
+                        <h3>What I Build</h3>
+                        <p>Cloud-ready AI products, ETL pipelines, model-serving APIs, analytics dashboards, and practical data systems.</p>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">LLM-Powered RAG Chatbot</h5>
-                            <p class="card-text">Designed a Retrieval-Augmented Generation system for intelligent question-answering over custom document datasets.</p>
-                            <p class="text-muted">Python, FastAPI, LangChain, OpenAI API, Vector DB, Docker</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="mini-panel reveal">
+                        <h3>How I Work</h3>
+                        <p>I like taking a project from rough idea to deployed product with clean architecture, measurable impact, and polished UX.</p>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Health-E Full-Stack Application</h5>
-                            <p class="card-text">Designed/developed a health application from scratch, covering front-end and back-end architecture.</p>
-                            <p class="text-muted">Python, Full-Stack Development</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">End-to-End ML Pipeline for Customer Churn Prediction</h5>
-                            <p class="card-text">Built classification models with feature engineering and hyperparameter tuning for churn prediction.</p>
-                            <p class="text-muted">Python, Scikit-learn, XGBoost</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="mini-panel reveal">
+                        <h3>What I Want Next</h3>
+                        <p>Co-op and internship work where I can contribute to AI engineering, data pipelines, backend systems, and real deployments.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section bg-light">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="text-center mb-5">Education</h2>
+            <div class="section-heading">
+                <span class="section-kicker">About Me</span>
+                <h2>From raw data to real products</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content-card reveal">
+                        <p>
+                            I am an AI-focused engineer with hands-on experience in machine learning, data engineering, and backend development.
+                            My work includes building ETL pipelines, training predictive models, deploying FastAPI services, and shaping cloud-ready
+                            workflows that move from data collection to user-facing results.
+                        </p>
+                        <p>
+                            I enjoy projects where technical depth meets real utility. That can be a computer vision system, a retrieval-augmented
+                            chatbot, a health application, or a business intelligence pipeline. I aim to build things that are intelligent, scalable,
+                            and clearly useful to the people who rely on them.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-card accent-card reveal">
+                        <h3>Quick Snapshot</h3>
+                        <ul class="simple-list">
+                            <li>Durham College AI student in the co-op stream</li>
+                            <li>Master's degree in Data Analytics and Data Science</li>
+                            <li>Experience in AI, data science, and data engineering roles</li>
+                            <li>Fluent in English, French, Arabic, and Spanish</li>
+                            <li>Strong with Python, SQL, cloud, APIs, and ML delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-muted">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-kicker">Skills</span>
+                <h2>Technical depth across AI, engineering, and delivery</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card reveal">
+                        <h3>Programming</h3>
+                        <p>Python, SQL, Bash, C++, R, front-end development, back-end development</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card reveal">
+                        <h3>AI and ML</h3>
+                        <p>Scikit-learn, TensorFlow, PyTorch, regression, classification, clustering, XGBoost, model evaluation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card reveal">
+                        <h3>Cloud and DevOps</h3>
+                        <p>AWS, Azure, GCP, Terraform, Docker, CI/CD, BigQuery, Snowflake, model serving, REST APIs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card reveal">
+                        <h3>Analytics Delivery</h3>
+                        <p>Power BI, Tableau, Excel VBA, data warehousing, KPI analysis, automation, SCRUM, Jira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-kicker">Experience</span>
+                <h2>Work that blends analytics, engineering, and business impact</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-date">2025 / 03 - 2025 / 08</div>
+                    <div class="timeline-card reveal">
+                        <h3>Data Scientist</h3>
+                        <h4>ALTEN</h4>
+                        <ul class="simple-list">
+                            <li>Built K-means clustering models to segment customers and improve targeting strategies.</li>
+                            <li>Processed large datasets using Python and SQL to identify performance and financial risks.</li>
+                            <li>Translated business problems into data-driven solutions and communicated insights to non-technical stakeholders.</li>
+                            <li>Used Google Analytics data to support retention and digital optimization strategies.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">2024 / 05 - 2025 / 03</div>
+                    <div class="timeline-card reveal">
+                        <h3>Data Engineer</h3>
+                        <h4>Societe Surlemat</h4>
+                        <ul class="simple-list">
+                            <li>Designed and implemented scalable ETL pipelines to ingest, transform, and store data from multiple sources.</li>
+                            <li>Prepared datasets for downstream machine learning applications and reporting systems.</li>
+                            <li>Optimized SQL queries and data workflows to improve performance and reliability.</li>
+                            <li>Automated data pipelines and reporting processes to reduce manual effort.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">2023 / 02 - 2023 / 09</div>
+                    <div class="timeline-card reveal">
+                        <h3>Data Scientist</h3>
+                        <h4>Deloitte</h4>
+                        <ul class="simple-list">
+                            <li>Developed and evaluated regression models with Scikit-learn to identify drivers of revenue and churn.</li>
+                            <li>Improved campaign ROI by 18% through customer segmentation and predictive analysis.</li>
+                            <li>Built automated data workflows that reduced reporting time from days to minutes.</li>
+                            <li>Delivered decision-ready insights to stakeholders through analytics and performance evaluation.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">2025 / 09 - Present</div>
+                    <div class="timeline-card reveal">
+                        <h3>French Tutor</h3>
+                        <h4>TCF and Advanced Exams | Canada-wide</h4>
+                        <ul class="simple-list">
+                            <li>Deliver structured training to help students pass TCF and advanced exams.</li>
+                            <li>Develop personalized learning strategies and performance tracking.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section section-muted">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-kicker">Featured Projects</span>
+                <h2>Live builds, deployed products, and AI systems worth exploring</h2>
+            </div>
+
+            <div class="project-showcase reveal">
+                <div class="project-showcase-copy">
+                    <p class="project-showcase-label">Project Spotlight</p>
+                    <h3>Health-E 2.0 ecosystem</h3>
+                    <p>
+                        Health-E is the strongest example of how I like to build: one idea expanded into multiple surfaces, clear user flows,
+                        and a real deployment story. It combines application structure, backend thinking, and a more product-driven feel than
+                        a typical student project.
+                    </p>
+                    <div class="project-links">
+                        <a class="btn btn-primary btn-hero btn-small" href="https://health-e-kiosk-3izpzjuxaa-uc.a.run.app/" target="_blank">Health-E Kiosk</a>
+                        <a class="btn btn-default btn-ghost btn-small" href="https://health-e-dashboard-3izpzjuxaa-uc.a.run.app/" target="_blank">Health-E Dashboard</a>
+                    </div>
+                </div>
+                <div class="project-showcase-grid">
+                    <div class="live-tile">
+                        <span class="tile-kicker">Live Demo</span>
+                        <h4>Health-E Kiosk</h4>
+                        <p>Patient-facing flow with a cleaner interactive experience and cloud deployment.</p>
+                    </div>
+                    <div class="live-tile">
+                        <span class="tile-kicker">Live Demo</span>
+                        <h4>Health-E Dashboard</h4>
+                        <p>Dashboard layer for visibility, monitoring, and a stronger product ecosystem.</p>
+                    </div>
+                    <div class="live-tile accent-tile">
+                        <span class="tile-kicker">Live Demo</span>
+                        <h4>AI Job Intel Resume Optimizer</h4>
+                        <p>AI-assisted workflow for tailoring resumes to job opportunities with stronger positioning.</p>
+                        <a href="https://ai-job-intel-resume-optimizer.vercel.app/" target="_blank">Open live app</a>
+                    </div>
+                    <div class="live-tile repo-tile">
+                        <span class="tile-kicker">GitHub</span>
+                        <h4>MarkusSmart repositories</h4>
+                        <p>Browse Health-E-2.0, ai-job-intel-resume-optimizer, portfolio work, labs, and other deployed experiments.</p>
+                        <a href="https://github.com/MarkusSmart?tab=repositories" target="_blank">View repository list</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row project-grid">
+                <div class="col-md-6">
+                    <div class="project-card reveal">
+                        <h3>AI-Powered Virtual Try-On System</h3>
+                        <p>Built a computer vision pipeline with Python, OpenCV, deep learning, and FastAPI to visualize clothing fit through image processing and garment overlay.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card reveal">
+                        <h3>LLM-Powered RAG Chatbot</h3>
+                        <p>Designed a document intelligence system with retrieval, embeddings, vector indexing, GPT-based generation, FastAPI, Docker, and cloud deployment.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card reveal">
+                        <h3>End-to-End ML Pipeline for Churn Prediction</h3>
+                        <p>Built classification workflows with Random Forest and XGBoost, including feature engineering, tuning, evaluation, and production-style inference.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card reveal">
+                        <h3>AI Model Deployment with FastAPI</h3>
+                        <p>Designed and deployed REST APIs for machine learning predictions with scalable backend architecture and modular production-ready structure.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card reveal">
+                        <h3>Real-Time Data Pipeline for ML Systems</h3>
+                        <p>Developed ingestion and transformation flows for streaming data, with scheduling, logging, and error handling for reliable analytics and ML use cases.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card reveal">
+                        <h3>Data Warehouse and BI System</h3>
+                        <p>Integrated multiple sources into a warehouse, optimized SQL for analytics, and connected dashboards in Power BI and Tableau for business reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-kicker">Education</span>
+                <h2>Academic foundation in AI, analytics, and information systems</h2>
+            </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body">
-                            <h5>Certificate - Artificial Intelligence, Design & Implementation</h5>
-                            <p class="text-muted">Durham College, Canada | 2025 - 2026</p>
-                            <p>Topics: Information System, Visualization, Business Intelligence, Data Analysis, Python, AWS, Tableau, Front-End Development, Back-End Development.</p>
-                        </div>
+                    <div class="edu-card reveal">
+                        <span class="edu-year">2025 - 2026</span>
+                        <h3>Certificate in Artificial Intelligence, Design and Implementation</h3>
+                        <p>Durham College, Canada</p>
+                        <p>Admitted into the work term co-op option and seeking a co-op role from May to Aug 2026.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body">
-                            <h5>Master's Degree - Data Analytics and Data Science</h5>
-                            <p class="text-muted">International University of Rabat, Morocco | 2023-2025</p>
-                            <p>Topics: Front-End/Back-End Development, Information Systems, Visualization, Business Intelligence, Data Analysis, Python.</p>
-                        </div>
+                    <div class="edu-card reveal">
+                        <span class="edu-year">2023 - 2025</span>
+                        <h3>Master's Degree in Data Analytics and Data Science</h3>
+                        <p>International University of Rabat, Morocco</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body">
-                            <h5>Exchange Program: Information Technology</h5>
-                            <p class="text-muted">Toronto Metropolitan University, Canada | 2025</p>
-                            <p>Courses: Information Systems, Visualization, Business Intelligence, Data Analysis, Python.</p>
-                        </div>
+                    <div class="edu-card reveal">
+                        <span class="edu-year">2025</span>
+                        <h3>Exchange Program in Information Technology</h3>
+                        <p>Toronto Metropolitan University, Canada</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body">
-                            <h5>Bachelor's Degree – Economics</h5>
-                            <p class="text-muted">Université of Mohammed, Morocco | 2019-2023</p>
-                            <p>Courses: Information Systems, Visualization, Business Intelligence, Data Analysis, Python.</p>
-                        </div>
+                    <div class="edu-card reveal">
+                        <span class="edu-year">2019 - 2023</span>
+                        <h3>Bachelor's Degree in Economics</h3>
+                        <p>Universite of Mohammed, Morocco</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section class="section section-muted">
         <div class="container">
-            <h2 class="text-center mb-5">Contact</h2>
             <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <div class="mb-3">
-                        <i class="fas fa-envelope fa-2x text-primary me-3"></i>
-                        <span>hamza.el.hilali505@gmail.com</span>
+                <div class="col-md-6">
+                    <div class="content-card reveal">
+                        <h3>Languages</h3>
+                        <ul class="simple-list">
+                            <li>English - fluent</li>
+                            <li>French - fluent</li>
+                            <li>Arabic - native</li>
+                            <li>Spanish - working proficiency</li>
+                        </ul>
                     </div>
-                    <div class="mb-3">
-                        <i class="fas fa-phone fa-2x text-primary me-3"></i>
-                        <span>(647) 236-1627</span>
-                    </div>
-                    <div class="mb-3">
-                        <i class="fab fa-github fa-2x text-primary me-3"></i>
-                        <a href="https://github.com/MarkusSmart?tab=repositories" target="_blank">GitHub Profile</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-card reveal">
+                        <h3>What I Want To Build Next</h3>
+                        <p>
+                            I want to keep building applied AI systems that combine data pipelines, model intelligence, APIs, and polished user-facing
+                            experiences. The best role for me is one where I can help move products from idea to deployment with both technical depth
+                            and practical business value.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+</main>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p>&copy; 2026 Hamza El Hilali. All rights reserved.</p>
+<footer id="contact" class="footer-panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Let's connect</h2>
+                <p>If you are looking for a motivated AI and data co-op student who enjoys building useful, polished, cloud-ready solutions, I would love to connect.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-links">
+                    <a href="mailto:hamza.el.hilali505@gmail.com"><i class="fa fa-envelope"></i> hamza.el.hilali505@gmail.com</a>
+                    <a href="tel:+16472361627"><i class="fa fa-phone"></i> +1 (647) 236-1627</a>
+                    <a href="https://www.linkedin.com/in/hamza-el-hilali-2b5b75325/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn Profile</a>
+                    <a href="https://github.com/MarkusSmart?tab=repositories" target="_blank"><i class="fa fa-github"></i> GitHub Portfolio</a>
+                    <a href="https://health-e-kiosk-3izpzjuxaa-uc.a.run.app/" target="_blank"><i class="fa fa-external-link"></i> Health-E Kiosk</a>
+                    <a href="https://ai-job-intel-resume-optimizer.vercel.app/" target="_blank"><i class="fa fa-external-link"></i> AI Resume Optimizer</a>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hamza El Hilali. Built with Flask and prepared for AWS Elastic Beanstalk.</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="static/js/main.js"></script>
 </body>
 </html>
